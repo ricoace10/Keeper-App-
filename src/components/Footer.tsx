@@ -1,7 +1,7 @@
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="footer">
       <p>Copyright {currentYear}</p>
     </footer>
   );
