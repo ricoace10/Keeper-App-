@@ -1,4 +1,5 @@
-import { default as Footer, default as Header } from "./components/Footer.tsx";
+import Footer from "./components/Footer.tsx";
+import Header from "./components/Header.tsx";
 import Note from "./components/Note.tsx";
 
 function App() {
