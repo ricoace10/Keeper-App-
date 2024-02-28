@@ -1,5 +1,6 @@
 import Footer from "./components/Footer.tsx";
 import Header from "./components/Header.tsx";
+import NoPage from "./components/NoPage.tsx";
 import Note from "./components/Note.tsx";
 import notes from "./components/notes.ts";
 
@@ -23,6 +24,7 @@ function App() {
       <Header />
       {notes.map(createNotes)}
       <Footer />
+      <NoPage />
     </div>
   );
 }

@@ -54,3 +54,14 @@ footer p {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
