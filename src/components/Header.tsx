@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="header">
-      <h1>Keeper</h1>
+      <Link to="/">
+        <h1>Keeper</h1>
+      </Link>
     </header>
   );
 }
