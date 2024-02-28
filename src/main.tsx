@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "../src/App.tsx";
 import HomePage from "./Pages/HomePages.tsx";
 import NotesPage from "./Pages/NotesPage.tsx";
+import NoPage from "./components/NoPage.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "", element: <HomePage /> },
       { path: "/note", element: <NotesPage /> },
+      { path: "*", element: <NoPage /> },
     ],
   },
 ]);
