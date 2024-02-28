@@ -17,6 +17,9 @@ header {
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+a:link {
+  background-color: #f5ba13;
+}
 
 header h1 {
   color: #fff;
@@ -44,6 +47,19 @@ footer p {
   margin: 16px;
   float: left;
 }
+
+button {
+  background-color: #f5ba13;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "McLaren", cursive;
+  display: inline-block;
+  font-size: 16px;
+}
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
@@ -64,4 +80,10 @@ footer p {
 .container h1 {
   font-size: 40px;
   font-weight: 200;
+}
+
+.user {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 400;
 }

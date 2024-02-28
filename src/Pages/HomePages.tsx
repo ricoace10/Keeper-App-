@@ -19,14 +19,16 @@ function createNotes(notesItem: {
 
 function HomePage() {
   return (
-    <div className="container">
+    <>
       <Header />
-      <h1>Hello User</h1>
-      <Link to="/note">
-        <button type="submit">Welcome To Notes</button>
-      </Link>
-      <Footer />
-    </div>
+      <div className="container">
+        <h1 className="user">Hello User</h1>
+        <Link to="/note">
+          <button type="submit">Welcome To Notes</button>
+        </Link>
+        <Footer />
+      </div>
+    </>
   );
 }
 
