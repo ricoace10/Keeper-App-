@@ -11,7 +11,7 @@ function CreateArea(props) {
 
     setNote((prevNote: string) => {
       return {
-        prevNote,
+        ...prevNote,
         [name]: value,
       };
     });
@@ -28,7 +28,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form action="">
+      <form>
         <input
           name="title"
           onChange={handleChange}
@@ -42,9 +42,7 @@ function CreateArea(props) {
           placeholder="Take a note.."
           rows={3}
         />
-        <button className="button" onClick={submitNote}>
-          Add
-        </button>
+        <button onClick={submitNote}>Add</button>
       </form>
     </div>
   );

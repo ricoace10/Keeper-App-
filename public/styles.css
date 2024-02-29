@@ -80,14 +80,15 @@ button {
 .note button {
   position: relative;
   float: right;
-  margin-right: 10px;
+  margin-right: 35px;
   color: #f5ba13;
   border: none;
   width: 40px;
   height: 40px;
   cursor: pointer;
   outline: none;
-  color: white;
+  text-align: center;
+  background-color: #fff;
 }
 
 form {
