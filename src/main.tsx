@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "../src/App.tsx";
 import HomePage from "./Pages/HomePages.tsx";
 import NotesPage from "./Pages/NotesPage.tsx";
-import NoPage from "./components/NoPage.tsx";
+import NoPage from "./Pages/NoPage.tsx";
 
 export const router = createBrowserRouter([
   {

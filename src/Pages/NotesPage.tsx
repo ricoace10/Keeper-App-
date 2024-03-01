@@ -4,10 +4,16 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Note from "../components/Note";
 
+export interface NoteData {
+  id: string;
+  title: string;
+  content: string;
+}
+
 function NotesPage() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState<NoteData[]>([]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  function addNote(newNote) {
+  function addNote(newNote: NoteData) {
     setNotes((prevNotes) => {
       return [...prevNotes, newNote];
     });
@@ -15,7 +21,7 @@ function NotesPage() {
 
   function deleteNote(id: number) {
     setNotes((prevNotes) => {
-      return prevNotes.filter((noteItem, index) => {
+      return prevNotes.filter((_noteItem, index) => {
         return index !== id;
       });
     });
@@ -24,11 +30,11 @@ function NotesPage() {
     <>
       <Header />
       <CreateArea onAdd={addNote} />
-      {notes.map((noteItem, index) => {
+      {notes.map((noteItem) => {
         return (
           <Note
-            key={index}
-            id={index}
+            key={noteItem.id}
+            id={noteItem.id}
             title={noteItem.title}
             content={noteItem.content}
             onDelete={deleteNote}

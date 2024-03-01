@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { NoteData } from "../Pages/NotesPage";
 
-function CreateArea(props) {
-  const [note, setNote] = useState({
+function CreateArea(props: { onAdd: (note: NoteData) => void }) {
+  const [note, setNote] = useState<NoteData>({
+    id: Math.random().toString(),
     title: "",
     content: "",
   });
@@ -9,7 +11,7 @@ function CreateArea(props) {
   function handleChange(event: { target: { name: string; value: string } }) {
     const { name, value } = event.target;
 
-    setNote((prevNote: string) => {
+    setNote((prevNote) => {
       return {
         ...prevNote,
         [name]: value,
@@ -20,6 +22,7 @@ function CreateArea(props) {
   function submitNote(event: { preventDefault: () => void }) {
     props.onAdd(note);
     setNote({
+      id: Math.random().toString(),
       title: "",
       content: "",
     });
