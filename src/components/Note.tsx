@@ -1,5 +1,5 @@
 function Note(props: {
-  id: string;
+  id: unknown;
   onDelete(id: unknown): unknown;
   title: string;
   content: string;

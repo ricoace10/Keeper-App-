@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Note from "../components/Note";
 
 export interface NoteData {
-  id: string;
+  id: unknown;
   title: string;
   content: string;
 }
@@ -30,11 +30,11 @@ function NotesPage() {
     <>
       <Header />
       <CreateArea onAdd={addNote} />
-      {notes.map((noteItem) => {
+      {notes.map((noteItem, index) => {
         return (
           <Note
-            key={noteItem.id}
-            id={noteItem.id}
+            key={index}
+            id={index}
             title={noteItem.title}
             content={noteItem.content}
             onDelete={deleteNote}
