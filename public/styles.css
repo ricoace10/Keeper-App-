@@ -140,7 +140,6 @@ form textarea {
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
     position: relative;
     outline-width: 100%;
-    display: block;
   }
   button {
     background-color: #f5ba13;
