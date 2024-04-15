@@ -192,9 +192,14 @@ form textarea {
 
   body {
     background: #eee;
-    padding: 0 16px;
+    padding: 0 12px;
     position: relative;
     max-width: 100vh;
     margin: auto;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 }
