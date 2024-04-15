@@ -139,6 +139,8 @@ form textarea {
     padding: 16px 16px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
     position: relative;
+    outline-width: 100%;
+    display: block;
   }
   button {
     background-color: #f5ba13;
@@ -193,7 +195,7 @@ form textarea {
     background: #eee;
     padding: 0 16px;
     position: relative;
-    min-height: 100vh;
-    width: 100%;
+    max-width: 100vh;
+    margin: auto;
   }
 }
