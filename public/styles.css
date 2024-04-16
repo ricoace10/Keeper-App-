@@ -8,7 +8,7 @@ html {
 }
 body {
   background: #eee;
-  padding: 0 0 0 0;
+  padding: 0;
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
@@ -18,7 +18,6 @@ body {
 header {
   background-color: #f5ba13;
   margin: auto -20px;
-  outline-width: 100%;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -134,28 +133,37 @@ form textarea {
 
 /* Media Queries for Responsive Design */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 895px) {
   body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   header {
-    padding: 12px 24px; /* Adjust padding for smaller screens */
+    padding: 16px 32px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: auto -2px;
   }
   form {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 50%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   body {
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   header h1 {
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 24px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   form {
-    width: 95%; /* Adjust width for even smaller screens */
+    width: 95%;
   }
 }
