@@ -141,8 +141,6 @@ form textarea {
 
   header {
     padding: 12px 24px; /* Adjust padding for smaller screens */
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
   form {
     width: 90%; /* Adjust width for smaller screens */
